@@ -56,7 +56,7 @@ def saveImage(image):
 	return full_filename
 
 def getLastImageIndex():
-	if os.stat("static/current_image_number.txt").st_size != 0:
+	if os.path.isfile("static/current_image_number.txt") != 0:
 		f = open("static/current_image_number.txt", "r")
 		index = f.read()
 		f.close()
@@ -66,7 +66,7 @@ def getLastImageIndex():
 	return int(index)
 
 def setLastImageIndex():
-	f = open("static/current_image_number.txt", "w")
+	f = open("static/current_image_number.txt", "w+")
 	global i
 	f.write(str(i))
 	f.close()
