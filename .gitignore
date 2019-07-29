@@ -1,0 +1,4 @@
+static/img/*
+static/*
+
+*/__pycache__/*

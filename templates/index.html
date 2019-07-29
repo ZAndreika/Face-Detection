@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Face Detector</title>
+</head>
+
+<body>
+
+	{% if json %} 
+	<textarea cols="60" rows="10">{{ json }} </textarea>
+	{% endif %}
+	{% if image_src %}
+	<img src = "{{ image_src }}" alt="no image" style="width: 200px; height: 200px;">
+	{% endif %}
+	<div>
+	<form action="/getResult" method="GET" >
+		<input type="hidden" name="type" value="json">
+		<input type="submit" value="Get Json">
+	</form>
+	
+	<form action="/getResult" method="GET" >
+		<input type="hidden" name="type" value="image">
+		<input type="submit" value="Get Image">
+	</form>
+
+	<form action="/getResult" method="GET" >
+		<input type="hidden" name="type" value="exit">
+		<input type="submit" value="Stop camera">
+	</form>
+	</div>
+</body>
+
+</html>
