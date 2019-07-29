@@ -72,7 +72,6 @@ def setLastImageIndex():
 	f.close()
 
 if __name__ == "__main__":
-
 	i = getLastImageIndex()
 
 	detector_thread = Thread(target=faceDetector.run)
