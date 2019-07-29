@@ -1,4 +1,7 @@
 ## English
+### Get source code
+`git clone https://github.com/ZAndreika/Face-Detection.git`
+
 ### Install dependencies
 `pip install -r requirements.txt`
 
@@ -16,6 +19,9 @@ After all, results are displayed on the web page.
 Image showing is hardcoded (save cv2 image to file and read its path for showing html img)
 
 ## Русский
+### Получить исходный код
+`git clone https://github.com/ZAndreika/Face-Detection.git`
+
 ### Установка зависимостей проекта
 `pip install -r requirements.txt`
 
